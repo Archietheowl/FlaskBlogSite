@@ -1,0 +1,2 @@
+INSERT INTO flogBlogTbl (`UBR`, `Author`, `Blog Title`, `Body`)
+VALUES ('1', 'AdamG', 'First Blog', 'This is just a test entry for a blog');

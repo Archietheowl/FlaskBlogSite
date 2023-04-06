@@ -1,0 +1,7 @@
+CREATE TABLE blogs (
+    UBR int NOT NULL AUTO_INCREMENT,
+    Author VARCHAR(30),
+    Title VARCHAR(200),
+    Body LONGTEXT,
+    PRIMARY KEY (UBR)
+);

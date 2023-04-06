@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% if session['first_name']%}
+        <div class="bg-info d-flex justify-content-center" >
+            <h4>Logged in as: {{session['first_name']}}</h4>
+        </div>
+    {% endif %}
+    <div>
+        {% block navbar %}
+            {% include 'navbar.html' %}
+        {% endblock %}
+    </div>
+    <div class="text-bg-primary p-3">
+        <header>
+            <h1>Flog</h1>
+            <h2>A lovely Demo Site Using The Flask Framework</h2>
+        </header>
+    </div>
+    <div class="container, text-bg-secondary p-3">
+        <h1>Welcome To Flog</h1>
+        <p>Flog is a simple blog site made using the Flask framework</p>
+    </div>
+</body>
+</html>
